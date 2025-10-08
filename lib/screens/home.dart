@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ejercicios_flutter/utils/side_menu.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,6 +13,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Ejercicios Flutter'),
+        ),
+        drawer: Drawer(
+          backgroundColor: const Color.fromARGB(255, 41, 40, 43),
+          child:
+              SideMenu(),
         ),
       ),
     );
