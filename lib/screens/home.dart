@@ -11,14 +11,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Ejercicios Flutter',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Ejercicios Flutter'),
-        ),
-        drawer: Drawer(
-          backgroundColor: const Color.fromARGB(255, 41, 40, 43),
-          child:
-              SideMenu(),
-        ),
+        appBar: AppBar(title: const Text('Ejercicios Flutter')),
+        drawer: SideMenu(),
       ),
     );
   }
