@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ejercicios_flutter/screens/ejercicio1.dart';
 import 'package:ejercicios_flutter/screens/ejercicio2.dart';
+import 'package:ejercicios_flutter/screens/ejercicio3.dart';
+import 'package:ejercicios_flutter/screens/ejercicio4.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SideMenu extends StatelessWidget {
@@ -75,16 +77,44 @@ class SideMenu extends StatelessWidget {
             ),
           ),
           Ink(
-            // Widget para aplicar color de fondo y efectos táctiles
             color: const Color.fromARGB(255, 139, 191, 240),
             child: ListTile(
               title: const Text("Ejercicio 2"),
               onTap: () {
-                Navigator.of(context).pop(); // Cierra el menú lateral
+                Navigator.of(context).pop();
                 Navigator.of(context).push(
-                  // Navega a la nueva pantalla
                   MaterialPageRoute(
                     builder: (BuildContext context) => const TextoImagen(),
+                  ),
+                );
+              },
+            ),
+          ),
+          Ink(
+            color: const Color.fromARGB(255, 139, 191, 240),
+            child: ListTile(
+              title: const Text("Ejercicio 3"),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        const TresFotosColumnas(),
+                  ),
+                );
+              },
+            ),
+          ),
+          Ink(
+            color: const Color.fromARGB(255, 139, 191, 240),
+            child: ListTile(
+              title: const Text("Ejercicio 4"),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        const CincoImagenesFilas(),
                   ),
                 );
               },
