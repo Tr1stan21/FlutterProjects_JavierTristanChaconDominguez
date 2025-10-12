@@ -37,6 +37,7 @@ dependencies:
   flutter_lints: ^6.0.0
   url_launcher: ^6.3.2
   google_fonts: ^6.3.2
+  readmore: any
 
 dev_dependencies:
   flutter_test:
@@ -58,6 +59,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  # Assets (imágenes) incluidas en la aplicación
+  assets:
+    - assets/img/paisajeEj7.jpeg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -89,3 +94,9 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+dependency_overrides:
+  characters: ^1.4.1
+  material_color_utilities: ^0.13.0
+  meta: ^1.17.0
+  test_api: ^0.7.7

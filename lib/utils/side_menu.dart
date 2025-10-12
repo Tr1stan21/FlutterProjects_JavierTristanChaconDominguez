@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:ejercicios_flutter/screens/ejercicio1.dart';
-import 'package:ejercicios_flutter/screens/ejercicio2.dart';
-import 'package:ejercicios_flutter/screens/ejercicio3.dart';
-import 'package:ejercicios_flutter/screens/ejercicio4.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio1.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio2.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio3.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio4.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio5.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio6.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio7.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SideMenu extends StatelessWidget {
@@ -10,13 +13,14 @@ class SideMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const Color white = Color.fromARGB(255, 255, 255, 255);
     return Drawer(
-      backgroundColor: const Color.fromARGB(255, 41, 40, 43),
+      backgroundColor: white,
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
           UserAccountsDrawerHeader(
-            decoration: BoxDecoration(color: Color.fromARGB(255, 41, 40, 43)),
+            decoration: BoxDecoration(color: Color.fromARGB(255, 187, 6, 200)),
             accountName: Align(
               alignment: Alignment.centerRight,
               child: Text(
@@ -35,7 +39,7 @@ class SideMenu extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 15,
                     decoration: TextDecoration.underline,
-                    decorationColor: Color.fromARGB(255, 255, 255, 255),
+                    decorationColor: white,
                   ),
                 ),
                 onTap: () async {
@@ -61,7 +65,7 @@ class SideMenu extends StatelessWidget {
           ),
           Ink(
             // Widget para aplicar color de fondo y efectos táctiles
-            color: const Color.fromARGB(255, 139, 191, 240),
+            color: white,
             child: ListTile(
               title: const Text("Ejercicio 1"),
               onTap: () {
@@ -77,7 +81,7 @@ class SideMenu extends StatelessWidget {
             ),
           ),
           Ink(
-            color: const Color.fromARGB(255, 139, 191, 240),
+            color: white,
             child: ListTile(
               title: const Text("Ejercicio 2"),
               onTap: () {
@@ -91,7 +95,7 @@ class SideMenu extends StatelessWidget {
             ),
           ),
           Ink(
-            color: const Color.fromARGB(255, 139, 191, 240),
+            color: white,
             child: ListTile(
               title: const Text("Ejercicio 3"),
               onTap: () {
@@ -106,7 +110,7 @@ class SideMenu extends StatelessWidget {
             ),
           ),
           Ink(
-            color: const Color.fromARGB(255, 139, 191, 240),
+            color: white,
             child: ListTile(
               title: const Text("Ejercicio 4"),
               onTap: () {
@@ -115,6 +119,50 @@ class SideMenu extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         const CincoImagenesFilas(),
+                  ),
+                );
+              },
+            ),
+          ),
+          Ink(
+            color: white,
+            child: ListTile(
+              title: const Text("Ejercicio 5"),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        const CincoImagenesColumnas(),
+                  ),
+                );
+              },
+            ),
+          ),
+          Ink(
+            color: white,
+            child: ListTile(
+              title: const Text("Ejercicio 6"),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => const DesbordadoTextos(),
+                  ),
+                );
+              },
+            ),
+          ),
+          Ink(
+            color: white,
+            child: ListTile(
+              title: const Text("Ejercicio 7"),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        const TresImagenesFilas(),
                   ),
                 );
               },
