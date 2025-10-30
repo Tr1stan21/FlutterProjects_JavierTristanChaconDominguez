@@ -1,4 +1,5 @@
 import 'package:ejercicios_flutter/utils/side_menu.dart';
+import 'package:ejercicios_flutter/utils/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class TresImagenesFilas extends StatelessWidget {
@@ -7,7 +8,7 @@ class TresImagenesFilas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Tres Imágenes en Filas')),
+      appBar: CustomAppBar.build('Tres Imágenes en Filas'),
       drawer: const SideMenu(),
       body: Center(
         child: Column(

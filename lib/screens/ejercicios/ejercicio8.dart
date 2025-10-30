@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ejercicios_flutter/utils/custom_app_bar.dart';
 import 'package:ejercicios_flutter/utils/side_menu.dart';
 
 class FilasColumnasAnidadas extends StatelessWidget {
@@ -7,7 +8,7 @@ class FilasColumnasAnidadas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Filas y columnas anidadas')),
+      appBar: CustomAppBar.build('Filas y columnas anidadas'),
       drawer: const SideMenu(),
       body: Center(
         child: LayoutBuilder(

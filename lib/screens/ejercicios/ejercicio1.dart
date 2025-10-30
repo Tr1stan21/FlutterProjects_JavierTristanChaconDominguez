@@ -1,4 +1,5 @@
 import 'package:ejercicios_flutter/utils/side_menu.dart';
+import 'package:ejercicios_flutter/utils/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,7 +10,7 @@ class InfomacionPersonal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Información Personal')),
+      appBar: CustomAppBar.build('Información Personal'),
       drawer: const SideMenu(),
       body: Center(
         child: Column(

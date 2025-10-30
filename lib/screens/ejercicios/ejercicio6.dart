@@ -1,4 +1,5 @@
 import 'package:ejercicios_flutter/utils/side_menu.dart';
+import 'package:ejercicios_flutter/utils/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:readmore/readmore.dart';
@@ -9,7 +10,7 @@ class DesbordadoTextos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Desbordamiento de textos')),
+      appBar: CustomAppBar.build('Desbordamiento de textos'),
       drawer: const SideMenu(),
       body: ListView(
         padding: const EdgeInsets.all(20),

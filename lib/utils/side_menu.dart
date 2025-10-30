@@ -1,4 +1,3 @@
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio9.dart';
 import 'package:flutter/material.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicio1.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicio2.dart';
@@ -8,6 +7,9 @@ import 'package:ejercicios_flutter/screens/ejercicios/ejercicio5.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicio6.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicio7.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicio8.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio9.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio10.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio11.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SideMenu extends StatelessWidget {
@@ -195,6 +197,36 @@ class SideMenu extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         const DesafioHelipuerto(),
+                  ),
+                );
+              },
+            ),
+          ),
+          Ink(
+            color: white,
+            child: ListTile(
+              title: const Text("Ejercicio 10"), 
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        const ContadorClicks(),
+                  ),
+                );
+              },
+            ),
+          ),
+          Ink(
+            color: white,
+            child: ListTile(
+              title: const Text("Ejercicio 11"), 
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        const InterfazInstagram(),
                   ),
                 );
               },
