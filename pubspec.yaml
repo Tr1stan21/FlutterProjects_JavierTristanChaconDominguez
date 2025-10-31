@@ -63,7 +63,7 @@ flutter:
   # Assets (imágenes) incluidas en la aplicación
   assets:
     - assets/img/paisajeEj7.jpeg
-
+    - assets/img/PerfilInstagram.jpg
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
