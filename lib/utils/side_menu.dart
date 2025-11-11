@@ -10,6 +10,7 @@ import 'package:ejercicios_flutter/screens/ejercicios/ejercicio8.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicio9.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicio10.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicio11.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio12.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SideMenu extends StatelessWidget {
@@ -74,7 +75,7 @@ class SideMenu extends StatelessWidget {
               title: const Text("Ejercicio 1"),
               onTap: () {
                 Navigator.of(context).pop(); // Cierra el menú lateral
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   // Navega a la nueva pantalla
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
@@ -90,7 +91,7 @@ class SideMenu extends StatelessWidget {
               title: const Text("Ejercicio 2"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) => const TextoImagen(),
                   ),
@@ -104,7 +105,7 @@ class SideMenu extends StatelessWidget {
               title: const Text("Ejercicio 3"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         const TresFotosColumnas(),
@@ -119,7 +120,7 @@ class SideMenu extends StatelessWidget {
               title: const Text("Ejercicio 4"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         const CincoImagenesFilas(),
@@ -134,7 +135,7 @@ class SideMenu extends StatelessWidget {
               title: const Text("Ejercicio 5"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         const CincoImagenesColumnas(),
@@ -149,7 +150,7 @@ class SideMenu extends StatelessWidget {
               title: const Text("Ejercicio 6"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) => const DesbordadoTextos(),
                   ),
@@ -163,7 +164,7 @@ class SideMenu extends StatelessWidget {
               title: const Text("Ejercicio 7"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         const TresImagenesFilas(),
@@ -178,7 +179,7 @@ class SideMenu extends StatelessWidget {
               title: const Text("Ejercicio 8"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         const FilasColumnasAnidadas(),
@@ -193,7 +194,7 @@ class SideMenu extends StatelessWidget {
               title: const Text("Ejercicio 9"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         const DesafioHelipuerto(),
@@ -205,13 +206,12 @@ class SideMenu extends StatelessWidget {
           Ink(
             color: white,
             child: ListTile(
-              title: const Text("Ejercicio 10"), 
+              title: const Text("Ejercicio 10"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (BuildContext context) =>
-                        const ContadorClicks(),
+                    builder: (BuildContext context) => const ContadorClicks(),
                   ),
                 );
               },
@@ -220,13 +220,27 @@ class SideMenu extends StatelessWidget {
           Ink(
             color: white,
             child: ListTile(
-              title: const Text("Ejercicio 11"), 
+              title: const Text("Ejercicio 11"),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         const InterfazInstagram(),
+                  ),
+                );
+              },
+            ),
+          ),
+          Ink(
+            color: white,
+            child: ListTile(
+              title: const Text("Ejercicio 12"),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => const RandomColors(),
                   ),
                 );
               },
