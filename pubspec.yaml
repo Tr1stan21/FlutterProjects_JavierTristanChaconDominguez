@@ -38,6 +38,7 @@ dependencies:
   url_launcher: ^6.3.2
   google_fonts: ^6.3.2
   readmore: any
+  flutter_launcher_icons: ^0.14.4
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +52,11 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
 
 # The following section is specific to Flutter packages.
 flutter:
@@ -60,14 +66,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  # Assets (imágenes) incluidas en la aplicación
   assets:
     - assets/img/paisajeEj7.jpeg
     - assets/img/PerfilInstagram.jpg
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
