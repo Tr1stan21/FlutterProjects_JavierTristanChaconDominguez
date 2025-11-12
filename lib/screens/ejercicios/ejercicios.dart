@@ -1,0 +1,12 @@
+export 'ejercicio1.dart';
+export 'ejercicio2.dart';
+export 'ejercicio3.dart';
+export 'ejercicio4.dart';
+export 'ejercicio5.dart';
+export 'ejercicio6.dart';
+export 'ejercicio7.dart';
+export 'ejercicio8.dart';
+export 'ejercicio9.dart';
+export 'ejercicio10.dart';
+export 'ejercicio11.dart';
+export 'ejercicio12.dart';

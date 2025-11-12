@@ -1,16 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio1.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio2.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio3.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio4.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio5.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio6.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio7.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio8.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio9.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio10.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio11.dart';
-import 'package:ejercicios_flutter/screens/ejercicios/ejercicio12.dart';
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicios.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SideMenu extends StatelessWidget {

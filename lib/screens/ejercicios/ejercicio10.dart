@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ejercicios_flutter/utils/side_menu.dart';
-import 'package:ejercicios_flutter/utils/custom_app_bar.dart';
+import 'package:ejercicios_flutter/utils/utils.dart';
 
 class ContadorClicks extends StatefulWidget {
   const ContadorClicks({super.key});

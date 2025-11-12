@@ -1,6 +1,5 @@
-import 'package:ejercicios_flutter/utils/side_menu.dart';
-import 'package:ejercicios_flutter/utils/custom_app_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:ejercicios_flutter/utils/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:readmore/readmore.dart';
 

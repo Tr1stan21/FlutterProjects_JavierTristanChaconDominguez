@@ -1,6 +1,5 @@
-import 'package:ejercicios_flutter/utils/side_menu.dart';
-import 'package:ejercicios_flutter/utils/custom_app_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:ejercicios_flutter/utils/utils.dart';
 
 class CincoImagenesFilas extends StatelessWidget {
   const CincoImagenesFilas({super.key});

@@ -1,7 +1,6 @@
-import 'package:ejercicios_flutter/utils/side_menu.dart';
-import 'package:ejercicios_flutter/utils/custom_app_bar.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:ejercicios_flutter/utils/utils.dart';
 
 class InterfazInstagram extends StatelessWidget {
   const InterfazInstagram({super.key});
