@@ -9,13 +9,12 @@ class JuegoImagenes extends StatefulWidget {
 }
 
 class _JuegoImagenes extends State<JuegoImagenes> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar.build('Juego de Colores'),
       drawer: const SideMenu(),
-
+      body: Container(),
     );
   }
 }
