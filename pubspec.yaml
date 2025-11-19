@@ -69,6 +69,12 @@ flutter:
   assets:
     - assets/img/paisajeEj7.jpeg
     - assets/img/PerfilInstagram.jpg
+    - assets/img/kiwi.png
+    - assets/img/manzana.png
+    - assets/img/melocoton.png
+    - assets/img/pera.png
+    - assets/img/sandia.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
