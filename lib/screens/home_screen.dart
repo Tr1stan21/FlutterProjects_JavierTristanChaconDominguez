@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ejercicios_flutter/utils/side_menu.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicios.dart';
+import 'package:ejercicios_flutter/utils/utils.dart';
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,10 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: CustomTheme.build(),
       debugShowCheckedModeBanner: false,
       title: 'Ejercicios Flutter',
       home: Scaffold(
-        appBar: AppBar(title: const Text('Ejercicios Flutter')),
+        appBar: CustomAppBar.build('Ejercicios Flutter'),
         drawer: SideMenu(),
       ),
 

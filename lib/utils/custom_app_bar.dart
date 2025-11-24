@@ -5,7 +5,6 @@ class CustomAppBar {
     return AppBar(
       title: Text(title),
       centerTitle: true,
-      backgroundColor: Colors.greenAccent,
     );
   }
 }
