@@ -1,24 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicios.dart';
 import 'package:ejercicios_flutter/utils/utils.dart';
-
+import 'package:ejercicios_flutter/providers/theme_provider.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // lee el provider
+    final themeProvider = context.watch<ThemeProvider>();
+
     return MaterialApp(
-      theme: CustomTheme.build(),
+      theme: CustomTheme.build(themeProvider.isDarkMode),
       debugShowCheckedModeBanner: false,
       title: 'Ejercicios Flutter',
       home: Scaffold(
-        appBar: CustomAppBar.build('Ejercicios Flutter'),
-        drawer: SideMenu(),
+        appBar: CustomAppBar.build('Ejercicios Flutter', context),
+        drawer: const SideMenu(),
       ),
-
-         routes: {
+      routes: {
         '/ej1': (context) => const InfomacionPersonal(),
         '/ej2': (context) => const TextoImagen(),
         '/ej3': (context) => const TresFotosColumnas(),

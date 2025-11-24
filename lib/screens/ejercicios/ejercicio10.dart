@@ -32,7 +32,7 @@ class _ContadorClicksState extends State<ContadorClicks> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Contador de Clicks'),
+      appBar: CustomAppBar.build('Contador de Clicks', context),
       drawer: const SideMenu(),
       body: Center(
         child: Column(
@@ -57,17 +57,17 @@ class _ContadorClicksState extends State<ContadorClicks> {
               ElevatedButton(
                 onPressed: _decrementCounter,
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                child: const Text('-',style: TextStyle(fontSize: 25),),
+                child: const Text('-', style: TextStyle(fontSize: 25)),
               ),
               ElevatedButton(
                 onPressed: _setCounter0,
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
-                child: const Text('0', style: TextStyle(fontSize: 25),),
+                child: const Text('0', style: TextStyle(fontSize: 25)),
               ),
               ElevatedButton(
                 onPressed: _incrementCounter,
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
-                child: const Text('+', style: TextStyle(fontSize: 25),),
+                child: const Text('+', style: TextStyle(fontSize: 25)),
               ),
             ],
           ),

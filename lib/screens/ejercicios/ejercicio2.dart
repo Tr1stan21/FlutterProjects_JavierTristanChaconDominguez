@@ -7,7 +7,7 @@ class TextoImagen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Nombre e imagen'),
+      appBar: CustomAppBar.build('Nombre e imagen', context),
       drawer: const SideMenu(),
       body: Center(
         child: Column(

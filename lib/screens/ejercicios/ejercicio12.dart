@@ -107,7 +107,7 @@ class _RandomColors extends State<RandomColors> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Juego de Colores'),
+      appBar: CustomAppBar.build('Juego de Colores', context),
       drawer: const SideMenu(),
       backgroundColor: const Color(0xFFF2F2F2),
       body: Center(

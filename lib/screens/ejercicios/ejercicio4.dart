@@ -7,7 +7,7 @@ class CincoImagenesFilas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Cinco Iconos en Filas'),
+      appBar: CustomAppBar.build('Cinco Iconos en Filas', context),
       drawer: const SideMenu(),
       body: Center(
         child: Column(

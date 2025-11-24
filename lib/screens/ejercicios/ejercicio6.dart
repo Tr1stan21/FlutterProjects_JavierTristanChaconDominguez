@@ -9,7 +9,7 @@ class DesbordadoTextos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Desbordamiento de textos'),
+      appBar: CustomAppBar.build('Desbordamiento de textos', context),
       drawer: const SideMenu(),
       body: ListView(
         padding: const EdgeInsets.all(20),

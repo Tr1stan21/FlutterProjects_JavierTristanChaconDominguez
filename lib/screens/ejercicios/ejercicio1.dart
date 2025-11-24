@@ -9,7 +9,7 @@ class InfomacionPersonal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Información Personal'),
+      appBar: CustomAppBar.build('Información Personal', context),
       drawer: const SideMenu(),
       body: Center(
         child: Column(

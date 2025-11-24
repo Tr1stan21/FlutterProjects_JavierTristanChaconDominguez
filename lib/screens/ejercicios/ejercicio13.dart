@@ -132,7 +132,7 @@ class _JuegoImagenesState extends State<JuegoImagenes> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Juego de Colores'),
+      appBar: CustomAppBar.build('Juego de Colores', context),
       drawer: const SideMenu(),
       body: SafeArea(
         child: Column(

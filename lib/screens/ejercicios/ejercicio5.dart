@@ -7,7 +7,7 @@ class CincoImagenesColumnas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Cinco Imágenes en Columnas'),
+      appBar: CustomAppBar.build('Cinco Imágenes en Columnas', context),
       drawer: const SideMenu(),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

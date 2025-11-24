@@ -19,7 +19,7 @@ class InterfazInstagram extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Interfaz Instagram'),
+      appBar: CustomAppBar.build('Interfaz Instagram', context),
       drawer: const SideMenu(),
       body: SingleChildScrollView(
         child: Column(

@@ -7,7 +7,7 @@ class FilasColumnasAnidadas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Filas y columnas anidadas'),
+      appBar: CustomAppBar.build('Filas y columnas anidadas', context),
       drawer: const SideMenu(),
       body: Center(
         child: LayoutBuilder(

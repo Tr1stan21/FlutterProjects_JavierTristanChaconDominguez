@@ -7,7 +7,7 @@ class TresImagenesFilas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Tres Imágenes en Filas'),
+      appBar: CustomAppBar.build('Tres Imágenes en Filas', context),
       drawer: const SideMenu(),
       body: Center(
         child: Column(

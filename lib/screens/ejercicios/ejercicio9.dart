@@ -7,21 +7,21 @@ class DesafioHelipuerto extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Desafío helipuerto'),
+      appBar: CustomAppBar.build('Desafío helipuerto', context),
       drawer: const SideMenu(),
       body: Center(
         child: Container(
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            border: Border.all(color: Colors.black, width: 10),
+            border: Border.all(
+              width: 10,
+              color: Theme.of(context).iconTheme.color!,
+            ),
           ),
           width: 280,
           height: 280,
           alignment: Alignment.center,
-          child: Text(
-            'H',
-            style: TextStyle(fontSize: 180, color: Colors.black),
-          ),
+          child: Text('H', style: TextStyle(fontSize: 180)),
         ),
       ),
     );

@@ -7,7 +7,7 @@ class TresFotosColumnas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar.build('Tres Fotos en Columnas'),
+      appBar: CustomAppBar.build('Tres Fotos en Columnas', context),
       drawer: const SideMenu(),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
