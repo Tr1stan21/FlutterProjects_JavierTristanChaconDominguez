@@ -14,7 +14,7 @@ const Color kTextSecondary = Color(0xFFC7B4D9);
 
 //
 // ────────────────────────────────────────────────────────────────
-//   PALETA CLARA (Optimizada)
+//   PALETA CLARA
 // ────────────────────────────────────────────────────────────────
 //
 const Color kLightBackground = Color(0xFFFCFAFF);

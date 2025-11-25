@@ -76,6 +76,7 @@ flutter:
     - assets/img/pera.png
     - assets/img/sandia.png
     - assets/img/app_icon.png
+    - assets/img/flutter_dorado.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

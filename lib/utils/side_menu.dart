@@ -19,10 +19,7 @@ class SideMenu extends StatelessWidget {
                 gradient: const LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [
-                    Color.fromARGB(255, 49, 25, 68), // morado profundo
-                    Color(0xFF1A0B27), // más oscuro
-                  ],
+                  colors: [Color.fromARGB(255, 49, 25, 68), Color(0xFF1A0B27)],
                 ),
                 borderRadius: BorderRadius.circular(24),
                 boxShadow: [
@@ -57,11 +54,17 @@ class SideMenu extends StatelessWidget {
                             ),
                           ],
                         ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
-                          child: Image.asset(
-                            'assets/img/app_icon.png',
-                            fit: BoxFit.cover,
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.pop(context);
+                            Navigator.pushNamed(context, '/splash');
+                          },
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset(
+                              'assets/img/app_icon.png',
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
@@ -122,7 +125,6 @@ class SideMenu extends StatelessWidget {
                   DrawerItem(11),
                   DrawerItem(12),
                   DrawerItem(13),
-
                 ],
               ),
             ),

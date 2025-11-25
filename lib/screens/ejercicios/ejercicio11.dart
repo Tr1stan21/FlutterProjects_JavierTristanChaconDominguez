@@ -178,7 +178,7 @@ class InterfazInstagram extends StatelessWidget {
                       ),
                       child: const Text(
                         'Following',
-                        style: TextStyle(fontSize: 12.5, color: Colors.black),
+                        style: TextStyle(fontSize: 12.5, ),
                       ),
                     ),
                   ),
@@ -198,7 +198,7 @@ class InterfazInstagram extends StatelessWidget {
                       ),
                       child: const Text(
                         'Message',
-                        style: TextStyle(fontSize: 12.5, color: Colors.black),
+                        style: TextStyle(fontSize: 12.5,),
                       ),
                     ),
                   ),
@@ -219,7 +219,7 @@ class InterfazInstagram extends StatelessWidget {
                       ),
                       child: const Text(
                         'Email',
-                        style: TextStyle(fontSize: 12.5, color: Colors.black),
+                        style: TextStyle(fontSize: 12.5,),
                       ),
                     ),
                   ),
@@ -239,7 +239,6 @@ class InterfazInstagram extends StatelessWidget {
                     ),
                     child: const Icon(
                       Icons.arrow_drop_down,
-                      color: Color.fromARGB(255, 0, 0, 0),
                     ),
                   ),
                 ],

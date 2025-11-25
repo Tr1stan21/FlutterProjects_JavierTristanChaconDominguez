@@ -109,14 +109,13 @@ class _RandomColors extends State<RandomColors> {
     return Scaffold(
       appBar: CustomAppBar.build('Juego de Colores', context),
       drawer: const SideMenu(),
-      backgroundColor: const Color(0xFFF2F2F2),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
           child: Container(
             padding: const EdgeInsets.all(24.0),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: kLightSurface,
               borderRadius: BorderRadius.circular(16),
             ),
             child: Column(
