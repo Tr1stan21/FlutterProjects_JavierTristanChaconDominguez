@@ -9,35 +9,37 @@ class TresImagenesFilas extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar.build('Tres Imágenes en Filas', context),
       drawer: const SideMenu(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Expanded(
-              child: FittedBox(
-                child: Image.asset('assets/img/paisajeEj7.jpeg'),
-              ),
-            ),
-            const Divider(color: Colors.black, thickness: 1, height: 1),
-
-            Expanded(
-              child: FittedBox(
-                child: Image.network(
-                  "https://images.pexels.com/photos/33787011/pexels-photo-33787011.jpeg?_gl=1*1bh7q0q*_ga*MTQ2MTE5MTcwOC4xNzYwMTEzODY2*_ga_8JE65Q40S6*czE3NjAyNzYzNjMkbzMkZzEkdDE3NjAyODA1NjQkajMwJGwwJGgw",
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: FittedBox(
+                  child: Image.asset('assets/img/paisajeEj7.jpeg'),
                 ),
               ),
-            ),
-            const Divider(color: Colors.black, thickness: 1, height: 1),
+              const Divider(color: Colors.black, thickness: 1, height: 1),
 
-            Expanded(
-              child: FittedBox(
-                child: Image.network(
-                  "https://images.pexels.com/photos/33787011/pexels-photo-33787011.jpeg?_gl=1*1bh7q0q*_ga*MTQ2MTE5MTcwOC4xNzYwMTEzODY2*_ga_8JE65Q40S6*czE3NjAyNzYzNjMkbzMkZzEkdDE3NjAyODA1NjQkajMwJGwwJGgw",
+              Expanded(
+                child: FittedBox(
+                  child: Image.network(
+                    "https://images.pexels.com/photos/33787011/pexels-photo-33787011.jpeg?_gl=1*1bh7q0q*_ga*MTQ2MTE5MTcwOC4xNzYwMTEzODY2*_ga_8JE65Q40S6*czE3NjAyNzYzNjMkbzMkZzEkdDE3NjAyODA1NjQkajMwJGwwJGgw",
+                  ),
                 ),
               ),
-            ),
-            const Divider(color: Colors.black, thickness: 1, height: 1),
-          ],
+              const Divider(color: Colors.black, thickness: 1, height: 1),
+
+              Expanded(
+                child: FittedBox(
+                  child: Image.network(
+                    "https://images.pexels.com/photos/33787011/pexels-photo-33787011.jpeg?_gl=1*1bh7q0q*_ga*MTQ2MTE5MTcwOC4xNzYwMTEzODY2*_ga_8JE65Q40S6*czE3NjAyNzYzNjMkbzMkZzEkdDE3NjAyODA1NjQkajMwJGwwJGgw",
+                  ),
+                ),
+              ),
+              const Divider(color: Colors.black, thickness: 1, height: 1),
+            ],
+          ),
         ),
       ),
     );

@@ -34,7 +34,6 @@ class SplashScreen extends StatelessWidget {
                         width: cardWidth,
                         height: cardWidth,
 
-                        // CAPA 1 — Fondo con textura + gradiente más profundo
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(36),
                           gradient: const LinearGradient(
