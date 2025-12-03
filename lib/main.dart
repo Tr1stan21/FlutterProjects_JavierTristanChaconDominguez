@@ -5,7 +5,7 @@ import 'package:ejercicios_flutter/providers/theme_provider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
+     ChangeNotifierProvider(
       create: (_) => ThemeProvider(),
       child: const SplashScreen(),
     ),

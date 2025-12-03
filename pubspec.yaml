@@ -104,9 +104,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
-
-dependency_overrides:
-  characters: ^1.4.1
-  material_color_utilities: ^0.13.0
-  meta: ^1.17.0
-  test_api: ^0.7.7
