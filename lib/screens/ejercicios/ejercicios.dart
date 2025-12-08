@@ -11,3 +11,5 @@ export 'ejercicio10.dart';
 export 'ejercicio11.dart';
 export 'ejercicio12.dart';
 export 'ejercicio13.dart';
+export 'ejercicio14.dart';
+export 'ejercicio15.dart';

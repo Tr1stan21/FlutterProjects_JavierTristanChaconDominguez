@@ -28,6 +28,18 @@ class CustomTheme {
         ),
         scaffoldBackgroundColor: kDarkBackground,
         iconTheme: const IconThemeData(color: kTextPrimary),
+
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: kPrimaryPurple,
+            foregroundColor: kGoldAccent,
+            textStyle: const TextStyle(fontWeight: FontWeight.bold),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+          ),
+        ),
       );
     }
 
@@ -58,6 +70,17 @@ class CustomTheme {
 
       scaffoldBackgroundColor: kLightBackground,
       iconTheme: const IconThemeData(color: kLightIconColor),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: kPrimaryPurple,
+          foregroundColor: kLightSurface,
+          textStyle: const TextStyle(fontWeight: FontWeight.bold),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+      ),
     );
   }
 }

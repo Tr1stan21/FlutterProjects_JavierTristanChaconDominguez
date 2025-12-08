@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ejercicios_flutter/utils/utils.dart';
 import 'dart:async';
 import 'dart:math';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class JuegoImagenes extends StatefulWidget {
   const JuegoImagenes({super.key});
@@ -114,7 +115,7 @@ class _JuegoImagenesState extends State<JuegoImagenes> {
     );
   }
 
-  void onImageTapped() {
+  void onImageTapped() async {
     if (!_isImageVisible || _wasTappedThisTurn) return;
 
     setState(() {
@@ -123,10 +124,22 @@ class _JuegoImagenesState extends State<JuegoImagenes> {
       _isImageVisible = false;
     });
 
+    await sumarValor(1);
+
     if (points >= 15) {
       _timer?.cancel();
       showGameOverDialog();
     }
+  }
+
+  Future<void> sumarValor(int nuevoValor) async {
+    final prefs = await SharedPreferences.getInstance();
+
+    // Suma el nuevo valor al valor actual, usando 0 si no existe y guarda el resultado
+    await prefs.setInt(
+      'cuenta_global',
+      (prefs.getInt('cuenta_global') ?? 0) + nuevoValor,
+    );
   }
 
   @override

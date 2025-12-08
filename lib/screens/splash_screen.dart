@@ -107,6 +107,8 @@ class SplashScreen extends StatelessWidget {
         '/ej11': (context) => const InterfazInstagram(),
         '/ej12': (context) => const RandomColors(),
         '/ej13': (context) => const JuegoImagenes(),
+        '/ej14': (context) => const AdivinaElNumero(),
+        '/ej15': (context) => const FormularioBasico(),
       },
     );
   }
