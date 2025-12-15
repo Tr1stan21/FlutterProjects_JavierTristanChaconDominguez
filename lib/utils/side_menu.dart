@@ -127,6 +127,7 @@ class SideMenu extends StatelessWidget {
                   DrawerItem(13),
                   DrawerItem(14),
                   DrawerItem(15),
+                  DrawerItem(16),
                 ],
               ),
             ),

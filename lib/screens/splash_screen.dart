@@ -1,3 +1,4 @@
+import 'package:ejercicios_flutter/screens/ejercicios/ejercicio16/pantalla1.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:ejercicios_flutter/screens/ejercicios/ejercicios.dart';
@@ -39,10 +40,7 @@ class SplashScreen extends StatelessWidget {
                           gradient: const LinearGradient(
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
-                            colors: [
-                              Color(0xFF3A1A4C), // púrpura profundo
-                              Color(0xFF15081E), // negro-púrpura
-                            ],
+                            colors: [Color(0xFF3A1A4C), Color(0xFF15081E)],
                           ),
                           boxShadow: [
                             BoxShadow(
@@ -109,6 +107,7 @@ class SplashScreen extends StatelessWidget {
         '/ej13': (context) => const JuegoImagenes(),
         '/ej14': (context) => const AdivinaElNumero(),
         '/ej15': (context) => const FormularioBasico(),
+        '/ej16': (context) => const Pantalla1(),
       },
     );
   }
